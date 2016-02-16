@@ -50,8 +50,8 @@ def number_to_short_month_name( num )
   months[num-1]
 end
 
-def volume_of_cube(a, b, c)
-  a * b * c
+def volume_of_cube(side)
+  side ** 3
 end
 
 def volume_of_sphere( radius )
