@@ -50,11 +50,7 @@ def number_to_short_month_name( num )
   months[num-1]
 end
 
-<<<<<<< HEAD
-def volume_of_cube(side)
-=======
 def volume_of_cube( side )
->>>>>>> 3401237184bff6e99f9668c34e9fb351c708c156
   side ** 3
 end
 
