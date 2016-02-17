@@ -58,6 +58,9 @@ def volume_of_sphere( radius )
   Rational(4, 3) * (Math::PI) * (radius**3)
 end
 
+def days_until_christmas()
+  
+end
 
 
 
