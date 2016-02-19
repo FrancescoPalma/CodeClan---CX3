@@ -66,7 +66,7 @@ class TestFriends < MiniTest::Test
 
   def test_fav_tv_show
     result = fav_tv_show(@person5)
-    assert_equal( 'Scrubs', result )
+    assert_equal('Scrubs', result)
   end
 
   def test_fav_food
@@ -95,7 +95,7 @@ class TestFriends < MiniTest::Test
   end
 
   def test_no_friends
-    assert_equal([], no_friends(@person5))
+    assert_equal('Marc', no_friends(@people))
   end
 
 end

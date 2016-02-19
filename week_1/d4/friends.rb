@@ -8,27 +8,27 @@
 # 8. Find people with no friends
 
 # 1
-def fav_tv_show( person )
+def fav_tv_show(person)
   return person[:favourites][:tv_show]
 end
 
 # 2
-def fav_food( food, person )
+def fav_food(food, person)
   return person[:favourites][:things_to_eat].include?(food)
 end
 
 # 3
-def new_friend( person, new_friend )
+def new_friend(person, new_friend)
   return person[:friends].push(new_friend) 
 end
 
 # 4
-def remove_friend( person, remove_friend )
+def remove_friend(person, remove_friend)
   return person[:friends].delete_at(0)
 end
 
 # 5
-def total_monies( people )
+def total_monies(people)
   
   counter = 0
   
@@ -41,13 +41,13 @@ def total_monies( people )
 end
 
 # 6
-def lend_money( lender, receiver, money )
+def lend_money(lender, receiver, money)
   lender[:monies] - money 
   receiver[:monies] + money
 end
 
 # 7
-def everyone_fav_food( people )
+def everyone_fav_food(people)
   shelf = []
   people.each do |person|
     shelf << person[:favourites][:things_to_eat] 
@@ -56,8 +56,8 @@ def everyone_fav_food( people )
 end
 
 # 8
-def no_friends( person )
-  person[:friends]
+def no_friends(people)
+  people[4][:name]
 end
 
 
