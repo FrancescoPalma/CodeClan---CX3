@@ -7,9 +7,6 @@
 # 7. Find the set of everyone's favourite food joined together
 # 8. Find people with no friends
 
-# INSANE
-# Find the people who have the same favourite tv show
-
 # 1
 def fav_tv_show( person )
   return person[:favourites][:tv_show]
@@ -24,3 +21,45 @@ end
 def new_friend( person, new_friend )
   return person[:friends].push(new_friend) 
 end
+
+# 4
+def remove_friend( person, remove_friend )
+  return person[:friends].delete_at(0)
+end
+
+# 5
+def total_monies( people )
+  
+  counter = 0
+  
+  people.each do |person|
+    counter += person[:monies]
+  end
+
+  return counter
+
+end
+
+# 6
+def lend_money( lender, receiver, money )
+  lender[:monies] - money 
+  receiver[:monies] + money
+end
+
+# 7
+def everyone_fav_food( people )
+  shelf = []
+  people.each do |person|
+    shelf << person[:favourites][:things_to_eat] 
+  end
+  return shelf.flatten!
+end
+
+# 8
+def no_friends( person )
+  person[:friends]
+end
+
+
+
+

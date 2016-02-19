@@ -77,15 +77,25 @@ class TestFriends < MiniTest::Test
     assert_equal(["Francesco"], new_friend(@person5, "Francesco"))
   end 
 
+  def test_remove_friend
+    assert_equal('Keith', remove_friend(@person2, 'Keith'))
+  end
 
+  def test_total_monies
+    assert_equal(143, total_monies(@people))
+  end
 
+  def test_lend_money
+    result = @person5[:monies] + 10
+    assert_equal(result, lend_money(@person4, @person5, 10))
+  end
 
+  def test_everyone_fav_food
+    assert_equal(['charcuterie', 'soup', 'bread', 'ratatouille', 'stew', 'spaghetti', 'spinach'], everyone_fav_food(@people))
+  end
 
-
-
-
-
-
-
+  def test_no_friends
+    assert_equal([], no_friends(@person5))
+  end
 
 end
