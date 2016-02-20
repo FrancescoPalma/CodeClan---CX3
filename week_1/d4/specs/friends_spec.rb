@@ -96,6 +96,6 @@ class TestFriends < MiniTest::Test
 
   def test_no_friends
     assert_equal('Marc', no_friends(@people))
-  end
+  end 
 
 end
