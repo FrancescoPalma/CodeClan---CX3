@@ -1,4 +1,4 @@
-# 1. For a given person, return their favourite tv show
+# 1. For a given prerson, return their favourite tv show
 # 2. For a given person, check if they like a particular food
 # 3. Allow a new friend to be added to a given person
 # 4. Allow a friend to be removed from a given person
