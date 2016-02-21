@@ -17,17 +17,3 @@ def return_bay(user_input, warehouse)
       return 'We couldn\'t find any product, sorry for the inconvenience.'
     end
 end
-
-# 3
-def return_list_products(user_input, warehouse)
-
-end
-
-# 3
-def return_distance_bays(user_input, warehouse)
-
-end
-
-# 4
-
-

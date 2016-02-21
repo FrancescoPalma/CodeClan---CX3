@@ -65,11 +65,3 @@ require_relative('warehouse_functions')
   user_input_2 = gets.chomp.downcase
 
   puts "#{user_input_2}: #{return_bay(user_input_2, @warehouse)}"
-
-  # 3) Given a list of bays, list the items in those bays 
-  #    and their distance.
-
-
-
-
-  
