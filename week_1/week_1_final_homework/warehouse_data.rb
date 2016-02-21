@@ -12,6 +12,7 @@ require_relative('warehouse_functions')
   a3: 'blouse', 
   a2: 'stop sign', 
   a1: 'needle', 
+
   c1: 'rusty nail', 
   c2: 'drill press', 
   c3: 'chalk', 
@@ -22,6 +23,7 @@ require_relative('warehouse_functions')
   c8: 'candy wrapper', 
   c9: 'shoe lace', 
   c10: 'leg warmers', 
+  
   b1: 'tire swing', 
   b2: 'sharpie', 
   b3: 'picture frame', 

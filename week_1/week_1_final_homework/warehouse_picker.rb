@@ -12,6 +12,7 @@ require_relative('warehouse_functions')
   a3: 'blouse', 
   a2: 'stop sign', 
   a1: 'needle', 
+
   c1: 'rusty nail', 
   c2: 'drill press', 
   c3: 'chalk', 
@@ -21,7 +22,8 @@ require_relative('warehouse_functions')
   c7: 'paint brush', 
   c8: 'candy wrapper', 
   c9: 'shoe lace', 
-  c10: 'leg warmers', 
+  c10: 'leg warmers',
+
   b1: 'tire swing', 
   b2: 'sharpie', 
   b3: 'picture frame', 
@@ -66,6 +68,20 @@ require_relative('warehouse_functions')
 
   puts "#{user_input_2}: #{return_bay(user_input_2, @warehouse)}"
 
-  puts "> Type \'b5, b10, b6\' to print out a list of products stored inside a preselected list of bays."
+  # At this point I have no idea how to continue the interaction with the user.
+  # The tests on the functions work perfectly but I don't know how to 'call'
+  # the user_input in order to get the same result as in 1) and 2).
+  # When running 'ruby warehouse_picker.rb' on my Terminal the interaction
+  # works fine until this point when it throws a 'NameError'.
 
-  # 3) Given a list of bays, list the items in those bays and their distance.
+  puts "> Type \'b5, b10, b6\' to print out a list of products stored inside your selected list of bays."
+
+  # 3) Given a list of bays, list the items in those bays.
+  user_input_3 = gets.chomp.downcase.
+
+  puts "#{user_input_3}: #{return_list_products(bays, @warehouse)}"
+
+  # 4) Given a list of items find the bays.
+  user_input_4 = gets.chomp.downcase.
+
+  puts "#{user_input_4}: #{return_list_products(products, @warehouse)}"

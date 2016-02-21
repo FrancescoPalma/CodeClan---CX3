@@ -19,16 +19,19 @@ def return_bay(user_input, warehouse)
 end
 
 # 3
-def return_list_products(user_input, warehouse)
-
-end
-
-# 3
-def return_distance_bays(user_input, warehouse)
-
+def return_list_products(bays, warehouse)
+    products = []
+    bays.each do |bay|
+      products << warehouse[bay]
+    end
+    return products
 end
 
 # 4
-def return_list_bays(user_input, warehouse)
-
+def return_list_bays(products, warehouse)
+  bays = []
+  products.each do |product|
+    bays << warehouse.key(product)
+  end
+  return bays
 end
