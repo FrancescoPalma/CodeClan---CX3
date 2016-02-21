@@ -64,14 +64,14 @@ word search   | c4
 
 Your job is to produce an app that does two things:
 
-Single bay
+Single bay  
 1) Given a bay, returns the item in that bay
   - given "b5", should return 'nail filer'  
 2) Given an item return the bay that it is in.  
   - given "nail filer" should return "b5"
 
-Multiple bays
+Multiple bays  
 3) Given a list of bays, list the items in those bays  
-  - given "b5, b10, and b6", determine that the products are "nail filer, cookie jar, tooth paste", and they're five bays      apart.
+  - given "b5, b10, and b6", determine that the products are "nail filer, cookie jar, tooth paste", and they're five bays      apart.  
 4) Given a list of items find the bays.  
   - given "shoe lace, rusty nail, leg warmers", determine that those items need to be collected from "c1, c9, and c10"
