@@ -65,3 +65,7 @@ require_relative('warehouse_functions')
   user_input_2 = gets.chomp.downcase
 
   puts "#{user_input_2}: #{return_bay(user_input_2, @warehouse)}"
+
+  puts "> Type \'b5, b10, b6\' to print out a list of products stored inside a preselected list of bays."
+
+  # 3) Given a list of bays, list the items in those bays and their distance.

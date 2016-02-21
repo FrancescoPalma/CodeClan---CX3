@@ -50,4 +50,21 @@ class TestWareHousePicker < MiniTest::Test
     assert_equal('b5', return_bay('nail filer', @warehouse))
   end
 
+  # 3
+  def test_return_list_products
+    expected = ['nail filer', 'cookie jar', 'tooth paste']
+    assert_equal(expected, return_list_products(['b5', 'b10', 'b6'], @warehouse))
+  end
+
+  # 3
+  def test_return_distance_bays
+    assert_equal(5, return_distance_bays(['b5', 'b10', 'b6'], @warehouse))
+  end 
+
+  # 4
+  def test_return_list_bays
+    expected = ['c1', 'c9', 'c10']
+    assert_equal(expected, return_list_bays(['shoe lace', 'rusty nail', 'leg warmers'], @warehouse))
+  end
+
 end
