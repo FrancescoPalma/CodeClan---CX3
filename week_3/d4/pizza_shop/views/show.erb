@@ -1,0 +1,12 @@
+<br><br>
+<b>Name:</b>
+<p><%= @pizza.full_name_with_space %></p>
+
+<b>Order:</b>
+<p><%= @pizza.quantity %> x <%= @pizza.type %> </p>
+
+<a href="/pizza/<%= @pizza.id %>/edit">Edit Your Order</a>
+
+<form action="/pizza/<%= @pizza.id %>/delete" method="post">
+  <input type="submit" value="Delete">
+</form>

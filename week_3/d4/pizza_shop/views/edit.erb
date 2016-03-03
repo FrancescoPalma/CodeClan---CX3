@@ -1,0 +1,28 @@
+<h2>Edit Your Order</h2>
+
+<form action="/pizza/<%= @pizza.id %>" method="post">
+  
+  <label>First Name:</label>
+  <input type="text" name="first_name" value="<%= @pizza.first_name %>">
+  <label>Last Name:</label>
+  <input type="text" name="last_name" value="<%= @pizza.last_name %>">
+
+  <select name="type">
+    <option value="Margherita">Margherita</option>
+    <option value="Napoli">Napoli</option>
+    <option value="Marinara">Marinara</option>
+    <option value="Quattro Formaggi">Quattro Formaggi</option>
+    <option value="Frutti di Mare">Frutti di Mare</option>
+    <option value="Salsiccia e Friarielli">Salsiccia e Friarielli</option>
+    <option value="Calzone">Calzone</option>
+    <option value="Calzone Farcito">Calzone Farcito</option>
+    <option value="Mezzo Metro">Mezzo Metro</option>
+    <option value="Mezzo Metro Farcito">Mezzo Metro Farcito</option>
+  </select>
+
+  <label>Quantity:</label>
+  <input type="number" name="quantity" value="<%= @pizza.quantity %>"></input>
+
+  <input type="submit" value="Update Your Order!">
+
+</form>
