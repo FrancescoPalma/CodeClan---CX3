@@ -1,0 +1,68 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/5.3.0/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'publish' ]
+2 info using npm@3.3.12
+3 info using node@v5.3.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/user/Desktop/cx3-3/week_6/d2/npm/robot',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/user/.npm/robot/1.0.0/package.tgz not in flight; packing
+9 info lifecycle robot@1.0.0~prepublish: robot@1.0.0
+10 silly lifecycle robot@1.0.0~prepublish: no script for prepublish, continuing
+11 verbose tar pack [ '/Users/user/.npm/robot/1.0.0/package.tgz',
+11 verbose tar pack   '/Users/user/Desktop/cx3-3/week_6/d2/npm/robot' ]
+12 verbose tarball /Users/user/.npm/robot/1.0.0/package.tgz
+13 verbose folder /Users/user/Desktop/cx3-3/week_6/d2/npm/robot
+14 verbose addLocalTarball adding from inside cache /Users/user/.npm/robot/1.0.0/package.tgz
+15 silly cache afterAdd robot@1.0.0
+16 verbose afterAdd /Users/user/.npm/robot/1.0.0/package/package.json not in flight; writing
+17 verbose afterAdd /Users/user/.npm/robot/1.0.0/package/package.json written
+18 silly publish { name: 'robot',
+18 silly publish   version: '1.0.0',
+18 silly publish   description: 'Friendly Robot',
+18 silly publish   main: 'robot.js',
+18 silly publish   scripts: { test: 'mocha robot_spec.js' },
+18 silly publish   author: { name: 'Francesco Palma' },
+18 silly publish   license: 'ISC',
+18 silly publish   dependencies: { lodash: '^4.6.1' },
+18 silly publish   devDependencies: { mocha: '^2.4.5' },
+18 silly publish   readme: 'My Robot friend',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   _id: 'robot@1.0.0',
+18 silly publish   _shasum: 'fa73cbf07283101e94d98e82a0887fac0be055cc',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name robot
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/robot
+24 verbose publish registryBase https://registry.npmjs.org/
+25 silly publish uploading /Users/user/.npm/robot/1.0.0/package.tgz
+26 verbose stack Error: auth required for publishing
+26 verbose stack     at CachingRegistryClient.publish (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/publish.js:30:14)
+26 verbose stack     at /usr/local/lib/node_modules/npm/lib/publish.js:137:14
+26 verbose stack     at mapToRegistry (/usr/local/lib/node_modules/npm/lib/utils/map-to-registry.js:55:3)
+26 verbose stack     at publish_ (/usr/local/lib/node_modules/npm/lib/publish.js:106:3)
+26 verbose stack     at Array.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+26 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+26 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:14:28)
+26 verbose stack     at chain (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+26 verbose stack     at /usr/local/lib/node_modules/npm/lib/publish.js:72:5
+26 verbose stack     at RES (/usr/local/lib/node_modules/npm/node_modules/inflight/inflight.js:23:14)
+27 verbose cwd /Users/user/Desktop/cx3-3/week_6/d2/npm/robot
+28 error Darwin 15.0.0
+29 error argv "/usr/local/Cellar/node/5.3.0/bin/node" "/usr/local/bin/npm" "publish"
+30 error node v5.3.0
+31 error npm  v3.3.12
+32 error code ENEEDAUTH
+33 error need auth auth required for publishing
+33 error need auth You need to authorize this machine using `npm adduser`
+34 verbose exit [ 1, true ]
