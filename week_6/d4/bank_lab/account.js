@@ -1,9 +1,7 @@
-var Bank = require('./bank.js');
-
-var Account = function(name, type, value) {
-  this.name = name;
-  this.type = type;
-  this.value = value;
+var Account = function(params){
+  this.owner = params.owner;
+  this.amount = params.amount;
+  this.type = params.type;
 };
 
 module.exports = Account;
