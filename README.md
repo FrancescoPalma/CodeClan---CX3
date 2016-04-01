@@ -10,4 +10,5 @@ Week2 : OOP in Ruby, Inheritance, Composition, Blocks, Modules
 Week3 : Relational Databases, SQL, PostGreSQL, web programming, MVC, Sinatra, CRUD, REST  
 Week4 : Consolidation of Week3, Associations & Entity Relationships, Agile Development  
 Week5 : First Solo Project with Sinatra  
-Week6 : Fundamentals of JavaScript, npm, lodash, Mocha, Chai, Prototypal Inheritance, Object Constructor, Functional Programming, Callbacks, Asynchronous
+Week6 : Fundamentals of JavaScript, npm, lodash, Mocha, Chai, Prototypal Inheritance, Object Constructor, Functional Programming, Callbacks, Asynchronous  
+Week7 : DOM, Event Listeners, Chrome DevTools, HTML5 Local Storage, AJAX, Google Maps API, HighCharts, Canvas
