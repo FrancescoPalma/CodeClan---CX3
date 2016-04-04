@@ -1,0 +1,125 @@
+body {
+  background-color: #ebebeb;
+}
+
+header {
+  text-align: center;
+  font-size: 7.5rem;
+  background-color: white;
+  box-shadow: 0 1px 2px #aaa;
+  margin: 0 0.5rem 0.5rem;
+  border-radius: 3px;
+}
+
+.rainbow {
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  background-image: gradient( linear, left top, right top, color-stop(0, #f22), color-stop(0.15, #f2f), color-stop(0.3, #22f), color-stop(0.45, #2ff), color-stop(0.6, #2f2),color-stop(0.75, #2f2), color-stop(0.9, #ff2), color-stop(1, #f22) );
+  color:transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.row {
+  display: block;
+}
+
+.grid {
+  display: inline-block;
+  vertical-align: top;
+  /*to take off the whitespace that doesn't allow a proper grid system*/
+  margin-right: -4px;
+}
+
+.grid-1 {
+  width: 8.3333333%;
+}
+
+.grid-2 {
+  width: 16.666666%;
+}
+
+.grid-3 {
+  width: 25%;
+}
+
+.grid-4 {
+  width: 33.3333333%;
+}
+
+.grid-5 {
+  width: 41.6666666%;
+}
+
+.grid-6 {
+  width: 50%;
+}
+
+.grid-7 {
+  width: 58.3333333%;
+}
+
+.grid-8 {
+  width: 66.6666666%;
+}
+
+.grid-9 {
+  width: 75%;
+}
+
+.grid-10 {
+  width: 83.3333333%;
+}
+
+.grid-11 {
+  width: 91.6666666%;
+}
+
+.grid-12 {
+  width: 100%;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,700,500italic,900,700italic,900italic);
+
+* { 
+  font-family: 'Roboto', sans-serif;
+}
+
+.card-1 {
+  height: 25rem;
+  width: 40rem;
+  box-shadow: 0 1px 2px #aaa;
+  background: white;
+  margin: 0 0.5rem 0.5rem;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.card-2 {
+  height: 12.5rem;
+  width: 17.5rem;
+  box-shadow: 0 1px 2px #aaa;
+  background: white;
+  margin: 0 0.5rem 0.5rem;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.card-3 {
+  height: 12.5rem;
+  width: 18rem;
+  box-shadow: 0 1px 2px #aaa;
+  background: white;
+  margin: 0 0.5rem 0.5rem;
+  border-radius: 3px;
+  text-align: center;
+}
+
+.card2, img {
+  height: 5rem;
+  width: 5rem;
+}
+
+.card3, img {
+  height: 5rem;
+  width: 5rem;
+}
