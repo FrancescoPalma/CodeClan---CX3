@@ -1,0 +1,13 @@
+package com.codeclan.fp;
+
+import java.util.ArrayList;
+
+public class BicycleShed {
+	
+	ArrayList<Bicycle> myBicycleShed;
+	
+	public BicycleShed() {
+		myBicycleShed = new ArrayList<>();
+	}
+	
+}

@@ -1,0 +1,13 @@
+package com.codeclan.fp;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+public class BicycleTest 
+{
+	@Test
+	public void testBicycle() {
+		Bicycle bikey = new Bicycle();
+		assertTrue(bikey.getCurrentSpeed()==0);
+	}
+}

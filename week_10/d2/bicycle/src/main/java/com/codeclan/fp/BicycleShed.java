@@ -1,0 +1,30 @@
+package com.codeclan.fp;
+
+import java.util.ArrayList;
+
+public class BicycleShed {
+	
+	ArrayList<Bicycle> myBicycleShed;
+	
+	public BicycleShed() {
+		myBicycleShed = new ArrayList<Bicycle>();
+	}
+	
+	public boolean addBicycle(Bicycle bikey) {
+		return myBicycleShed.add(bikey);
+	}
+	
+	public void removeBicycle(Bicycle bikey) {
+		for (int i = 0; i < myBicycleShed.size(); i++) {
+			Bicycle currentBicycle = myBicycleShed.get(i);
+			if (currentBicycle.getId()==bikey.getId()) {
+				myBicycleShed.remove(currentBicycle);
+			}
+		}
+	}
+	
+	public void removeBicycle(int index) {
+		myBicycleShed.remove(index);
+	}
+	
+}

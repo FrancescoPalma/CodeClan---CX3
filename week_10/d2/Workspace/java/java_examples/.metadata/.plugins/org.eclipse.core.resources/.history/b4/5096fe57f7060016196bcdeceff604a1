@@ -1,0 +1,10 @@
+package com.codeclan.fp;
+
+public abstract class Vehicle {
+	
+	protected int numberOfWheels;
+	protected String model;
+	protected String registration;
+	protected int maxSpeed;
+	protected int maxOccupancy;
+}

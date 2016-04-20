@@ -1,0 +1,12 @@
+package com.codeclan.fp;
+
+public class Bicycle {
+	
+	int currentSpeed;
+
+	public int getCurrentSpeed() {
+		
+		return currentSpeed;
+	}
+
+}

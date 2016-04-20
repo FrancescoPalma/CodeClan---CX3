@@ -1,0 +1,22 @@
+package com.codeclan.fp;
+
+import java.util.ArrayList;
+
+public class CarPark {
+	private ArrayList<Vehicle> carPark;
+	
+	public CarPark() {
+		carPark = new ArrayList<Vehicle>(10);
+	}
+	
+	public boolean park(Vehicle v) {
+		return carPark.add(v);
+	}
+	
+	public boolean exit(Vehicle v) {
+		for(Vehicle parkedVehicle : carPark) {
+			if (parkedVehicle.getRegistration().equals(v.getRegistration()))
+		}
+	}
+	throw.new. VehicleNotFoundException(v);
+}

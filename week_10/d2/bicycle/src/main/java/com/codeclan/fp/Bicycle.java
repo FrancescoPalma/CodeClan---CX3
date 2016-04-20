@@ -1,7 +1,8 @@
 package com.codeclan.fp;
 
-public class Bicycle {
+public class Bicycle  {
 	
+	private int id;
 	private int currentSpeed;
 	private int numberOfWheels;
 	private String name;
@@ -10,13 +11,23 @@ public class Bicycle {
 	private String colour;
 	
 	public Bicycle() {
+		super();
 		gears = 21;
 		colour = "Tomato";
+		numberOfWheels = 2;
 	}
 	
 	public Bicycle(String colour) {
 		this(); //calls the constructor
 		this.colour = colour;
+	}
+	
+	public int getId() {
+		return id;
+	}
+	
+	protected void setId(int id) {
+		this.id = id;
 	}
 	
 	public String getColour() {

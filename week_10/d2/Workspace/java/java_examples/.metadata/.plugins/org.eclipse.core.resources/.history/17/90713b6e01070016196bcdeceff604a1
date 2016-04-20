@@ -1,0 +1,17 @@
+package com.codeclan.fp;
+
+import org.junit.*;
+import static org.junit.Assert.*;
+
+public class CarParkTest {
+
+	@Test
+		public void testExitCarSuccess() {
+		Vehicle v = new Car("A12 3DFF");
+		CarPark cp = new CarPark();
+		cp.park(v);
+		assertTrue(cp.getCarPark().size()==1);
+		cp.exit(v);
+	}
+	
+}

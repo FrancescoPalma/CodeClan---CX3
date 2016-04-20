@@ -1,0 +1,15 @@
+package com.codeclan.fp;
+
+public class Bicycle {
+	
+	private int currentSpeed;
+	private int numberOfWheels;
+	private String name;
+	private int currentGear;
+	private int gears;
+
+	public int getCurrentSpeed() {
+		return currentSpeed;
+	}
+
+}
