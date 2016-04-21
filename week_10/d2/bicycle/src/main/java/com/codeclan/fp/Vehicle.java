@@ -7,6 +7,20 @@ public abstract class Vehicle {
 	protected String registration;
 	protected int maxSpeed;
 	protected int maxOccupancy;
+	protected int speed;
+	protected Ringable ringer;
+	
+	protected Vehicle() {
+		speed = 0;
+	}
+	
+	protected Vehicle(Ringable ringer) {
+		this.ringer = ringer;
+	}
+	
+	public String giveWarning() {
+		return ringer.makeSound();
+	}
 
 	public int getNumberOfWheels() {
 		return numberOfWheels;

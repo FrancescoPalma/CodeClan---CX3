@@ -1,0 +1,15 @@
+package com.codeclan.md;
+
+public class Drums {
+	
+	private String name;
+	
+	public Drums() {
+		name = "Drums";
+	}
+	
+	public void play() {
+		System.out.println("I'm a " + name + ".");
+	}
+
+}

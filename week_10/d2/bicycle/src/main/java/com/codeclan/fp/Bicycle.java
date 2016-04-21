@@ -9,12 +9,17 @@ public class Bicycle  {
 	private int currentGear;
 	private int gears;
 	private String colour;
+	private Bell bell;
 	
 	public Bicycle() {
-		super();
+		this(new Bell());
 		gears = 21;
 		colour = "Tomato";
 		numberOfWheels = 2;
+	}
+	
+	public Bicycle(Ringable ringer) {
+		super(ringer);
 	}
 	
 	public Bicycle(String colour) {

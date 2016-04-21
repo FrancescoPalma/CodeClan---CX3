@@ -24,4 +24,16 @@ public class BicycleTest
 		Bicycle bikify = new Bicycle();
 		System.out.println(bikify);
 	}
+	
+	@Test
+	public void testBicycleWarning() {
+		Bicycle bikify = new Bicycle();
+		System.out.println(bikify.giveWarning());
+	}
+	
+	@Test
+	public void testBicycleWarningFail() {
+		Bicycle bikify = new Bicycle(new Horn());
+		System.out.println(bikify.giveWarning());
+	}
 }

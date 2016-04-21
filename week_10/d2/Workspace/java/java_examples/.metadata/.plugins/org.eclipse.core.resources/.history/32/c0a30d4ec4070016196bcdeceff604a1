@@ -1,0 +1,25 @@
+package com.codeclan.md;
+
+import java.awt.Color;
+import java.awt.Dimension;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+public class simpleGraphics {
+
+    private static final int HEIGHT = 300;
+    private static final int WIDTH = 300;
+    
+    public static void main(String args[]) {
+        JFrame frame = new JFrame("Graphics!");
+        frame.setResizable(false);
+        frame.setBackground(Color.WHITE);
+        System.out.println("App started");
+        frame.setPreferredSize(new Dimension(300, 300));
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.pack();
+        frame.setVisible(true);
+    }
+	
+}

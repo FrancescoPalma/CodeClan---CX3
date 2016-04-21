@@ -1,0 +1,18 @@
+package com.codeclan.md;
+
+public class BassGuitar {
+
+	private String name;
+	private int numberOfStrings;
+	
+	public BassGuitar() {
+		name = "BassGuitare";
+		numberOfStrings = 4;
+	}
+	
+	public void play() {
+		System.out.println("I am a " + name + " and I have " + numberOfStrings + " strings.");
+		
+	}
+	
+}

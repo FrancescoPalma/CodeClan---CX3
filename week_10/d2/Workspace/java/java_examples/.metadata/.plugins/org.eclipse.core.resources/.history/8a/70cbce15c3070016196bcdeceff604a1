@@ -1,0 +1,10 @@
+package com.codeclan.md;
+
+import javax.swing.JPanel;
+
+public class simpleGraphics {
+
+    private static final int HEIGHT = 300;
+    private static final int WIDTH = 300;
+	
+}

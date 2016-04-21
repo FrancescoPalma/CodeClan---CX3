@@ -1,0 +1,12 @@
+package com.codeclan.fp;
+
+public class Horn implements Ringable {
+
+	public String makeSound() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	
+	
+}
