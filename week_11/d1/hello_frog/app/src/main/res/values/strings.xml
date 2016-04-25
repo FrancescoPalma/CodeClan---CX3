@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">HelloFrog</string>
+    <string name="app_header">Hello Frog!</string>
+    <string name="first_text">Welcome Froggers!</string>
+    <string name="second_text">Croack Croack</string>
+    <string name="submit_button">Submit</string>
+</resources>
