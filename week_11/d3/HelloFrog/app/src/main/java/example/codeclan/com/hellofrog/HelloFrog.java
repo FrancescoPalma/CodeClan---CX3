@@ -10,6 +10,7 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.JsonHttpResponseHandler;
@@ -17,12 +18,13 @@ import com.loopj.android.http.JsonHttpResponseHandler;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+/**
+ * Created by sandy on 25/04/2016.
+ */
 public class HelloFrog extends AppCompatActivity {
+
     private static final String API_URL = "http://cc-amphibian-api.herokuapp.com/";
 
-    EditText mNameEditText;
-    EditText mSpeciesEditText;
-    Button mSubmitButton;
     ListView mListView;
 
     JSONAdapter mJSONAdapter;
@@ -34,39 +36,34 @@ public class HelloFrog extends AppCompatActivity {
 
         setContentView(R.layout.activity_main);
 
-        mNameEditText = (EditText) findViewById(R.id.name_input);
-        mSpeciesEditText = (EditText) findViewById(R.id.species_input);
-        mSubmitButton = (Button) findViewById(R.id.submit_button);
         mListView = (ListView) findViewById(R.id.amphibian_list_view);
 
         mJSONAdapter = new JSONAdapter(this, getLayoutInflater());
-
         fetchAmphibians();
-
         mListView.setAdapter(mJSONAdapter);
 
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
-           @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-               JSONObject jsonObject =(JSONObject) mJSONAdapter.getItem(position);
-               Log.d("Hello Frog: ", jsonObject.toString());
-           }
-        });
-
-        mSubmitButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Log.d("HelloFrog:", "submit button clicked!");
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                JSONObject jsonObject =(JSONObject) mJSONAdapter.getItem(position);
+                Log.d("HelloFrog: ", jsonObject.toString());
+
                 Intent intent = new Intent(HelloFrog.this, AmphibianDetails.class);
-                intent.putExtra("name", mNameEditText.getText().toString());
-                intent.putExtra("species", mSpeciesEditText.getText().toString());
+                intent.putExtra("name", jsonObject.optString("name"));
+                intent.putExtra("species", jsonObject.optString("species"));
+                intent.putExtra("media", jsonObject.optString("media"));
+                intent.putExtra("numberOfLegs", jsonObject.optString("numberOfLegs"));
+                intent.putExtra("imageUrl", jsonObject.optString("imageUrl"));
+
                 startActivity(intent);
             }
         });
+
     }
 
     private void fetchAmphibians() {
         AsyncHttpClient client = new AsyncHttpClient();
+
         client.get(API_URL, new JsonHttpResponseHandler() {
             @Override
             public void onSuccess(JSONObject jsonObject) {
@@ -75,13 +72,25 @@ public class HelloFrog extends AppCompatActivity {
                 if (data != null) {
                     mJSONAdapter.updateData(data);
                 } else {
-                    Log.e("HelloFrog: ", "No data found");
+                    Log.e("HelloFrog: ", "No data found :-(");
                 }
             }
+
             @Override
             public void onFailure(int statusCode, Throwable throwable, JSONObject error) {
-                Log.e("HelloFrog: ", "Failure: " + statusCode + " " + throwable.getMessage());
+                Log.e("HelloFrog:", "Failure: " + statusCode + " " + throwable.getMessage());
             }
         });
     }
 }
+
+
+
+
+
+
+
+
+
+
+

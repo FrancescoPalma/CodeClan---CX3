@@ -13,14 +13,18 @@ import com.squareup.picasso.RequestCreator;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
-import org.w3c.dom.Text;
 
+/**
+ * Created by sandy on 27/04/2016.
+ */
 public class JSONAdapter extends BaseAdapter {
+
     private JSONArray mJSONArray;
     private LayoutInflater mLayoutInflater;
     private Context mContext;
 
-    public JSONAdapter(Context context, LayoutInflater inflater) {
+    public JSONAdapter(Context context, LayoutInflater inflater)
+    {
         mJSONArray = new JSONArray();
         mLayoutInflater = inflater;
         mContext = context;
@@ -39,14 +43,17 @@ public class JSONAdapter extends BaseAdapter {
     }
 
     public View getView(int position, View convertView, ViewGroup parent) {
+
         ViewHolder holder;
+
         JSONObject jsonObject = (JSONObject)getItem(position);
+
         if (convertView == null) {
-            convertView = mLayoutInflater.inflate(R.layout.row_list_item, null);
+            convertView = mLayoutInflater.inflate(R.layout.row_listitem, null);
             holder = new ViewHolder();
-            holder.thumbnailImageView = (ImageView) convertView.findViewById(R.id.thumbnail);
-            holder.nameTextView = (TextView) convertView.findViewById(R.id.list_name);
-            holder.speciesTextView = (TextView) convertView.findViewById(R.id.list_species);
+            holder.thumbnailImageView = (ImageView) convertView.findViewById(R.id.img_thumbnail);
+            holder.nameTextView = (TextView) convertView.findViewById(R.id.text_name);
+            holder.speciesTextView = (TextView) convertView.findViewById(R.id.text_species);
 
             convertView.setTag(holder);
         } else {
@@ -85,3 +92,10 @@ public class JSONAdapter extends BaseAdapter {
         public TextView speciesTextView;
     }
 }
+
+
+
+
+
+
+
