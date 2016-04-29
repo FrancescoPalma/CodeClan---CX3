@@ -14,6 +14,6 @@ Week6 : Fundamentals of JavaScript, npm, lodash, Mocha, Chai, Prototypal Inherit
 Week7 : DOM, Event Listeners, Chrome DevTools, HTML5 Local Storage, AJAX, Google Maps API, HighCharts, Canvas  
 Week8 : WebPack, Node.js, MongoDB, Agile Methodologies, Git/Github for collaboration  
 Week9 : Team Project 2 with Full-Stack JavaScript  
-Week10 : Java fundamentals, OOP, TDD with JUnit, Eclipse IDE, Design Patterns, UML
-Week11 : Android fundamentals, Unit Tests, Controls, Activity, ListViews, ListItems, adapting JSON data
+Week10 : Java fundamentals, OOP, TDD with JUnit, Eclipse IDE, Design Patterns, UML  
+Week11 : Android fundamentals, Unit Tests, Controls, Activity, ListViews, ListItems, adapting JSON data  
 Week12 : Solo Project 3 with Java/Android
