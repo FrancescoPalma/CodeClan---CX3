@@ -19785,7 +19785,7 @@
 	      React.createElement(
 	        'h5',
 	        null,
-	        'Name: '
+	        'Name:'
 	      ),
 	      React.createElement(
 	        'p',
@@ -19795,12 +19795,74 @@
 	      React.createElement(
 	        'h5',
 	        null,
-	        'Population: '
+	        'Capital:'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        this.props.country.capital
+	      ),
+	      React.createElement(
+	        'h5',
+	        null,
+	        'Population:'
 	      ),
 	      React.createElement(
 	        'p',
 	        null,
 	        this.props.country.population
+	      ),
+	      React.createElement(
+	        'h5',
+	        null,
+	        'Area:'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        this.props.country.area
+	      ),
+	      React.createElement(
+	        'h5',
+	        null,
+	        'Region:'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        this.props.country.region
+	      ),
+	      React.createElement(
+	        'h5',
+	        null,
+	        'Subregion:'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        this.props.country.subregion
+	      ),
+	      React.createElement(BorderingCountries, { borders: this.props.country.borders })
+	    );
+	  }
+	});
+	
+	var BorderingCountries = React.createClass({
+	  displayName: 'BorderingCountries',
+	
+	  render: function render() {
+	    return React.createElement(
+	      'div',
+	      null,
+	      React.createElement(
+	        'h5',
+	        null,
+	        'Bordering Countries:'
+	      ),
+	      React.createElement(
+	        'p',
+	        null,
+	        this.props.borders.toLocaleString()
 	      )
 	    );
 	  }
