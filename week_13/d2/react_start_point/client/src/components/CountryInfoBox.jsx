@@ -20,6 +20,7 @@ var CountryInfoBox = React.createClass({
   }
 })
 
+// Sub Component of CountryInfoBox to display bordering countries codes
 var BorderingCountries = React.createClass({
   render: function() {
     return (
