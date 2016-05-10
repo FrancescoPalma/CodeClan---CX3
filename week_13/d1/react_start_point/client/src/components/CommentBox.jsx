@@ -31,11 +31,17 @@ var CommentBox = React.createClass({
     this.setState({data: newComments});
   },
 
+  handleCommentDelete: function(id) {
+    var filteredData = this.state.data.filter(function(comment) {
+      return comment.id != id
+    });
+  },
+
   render: function() {
     return (
       <div>
         <h1>Comments</h1>
-        <CommentList data={this.state.data} />
+        <CommentList data={this.state.data} onCommentDelete={this.handleCommentDelete}/>
         <CommentForm onCommentSubmit={this.handleCommentSubmit} />
       </div>
     )

@@ -27,6 +27,8 @@ var CommentForm = React.createClass({
         author: this.state.author,
         text: this.state.text
       }
+      // it clears the state after adding author+text comment
+      this.setState({author: '', text: ''});
     )
   },
 
