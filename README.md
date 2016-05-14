@@ -16,4 +16,5 @@ Week8 : WebPack, Node.js, MongoDB, Agile Methodologies, Git/Github for collabora
 Week9 : Team Project 2 with Full-Stack JavaScript  
 Week10 : Java fundamentals, OOP, TDD with JUnit, Eclipse IDE, Design Patterns, UML  
 Week11 : Android fundamentals, Unit Tests, Controls, Activity, ListViews, ListItems, adapting JSON data  
-Week12 : Solo Project 3 with Java/Android
+Week12 : Solo Project 3 with Java/Android  
+Week13 : React, ES6 
