@@ -1,7 +1,7 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  name: Faster Than The Speed Of The Night
+  name: Faster than the speed of the night
   artist_id: 1
 
 two:

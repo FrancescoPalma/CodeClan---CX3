@@ -6,23 +6,34 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Artist.delete_all()
-Album.delete_all()
-Gig.delete_all()
-Venue.delete_all()
+# delete all ensures we don't duplicate record in the database if we run the
+# seeds file multiple times
+Artist.delete_all
+Album.delete_all
+Gig.delete_all
+Venue.delete_all
+# exclamation mark means that if there's an error, it'll fail
+# instead of just returning null
+album_one = artist1 = Artist.create!(name: 'Oasis')
+album_two = artist2 = Artist.create!(name: 'Justin Bieber')
 
-artist_one = Artist.create!( {name: "Oasis"} )
-artist_two = Artist.create!( {name: "Justin Bieber"})
+# Album.create!(name: 'Be Here Now', artist_id: artist1.id) alternative syntax
+# an album can be created through an artist
+artist1.albums.create!(name: 'Yeah. Oasis, bitch.')
+artist2.albums.create!(name: 'Baby baby babyy')
 
-artist_one.albums.create!({name:"Be Here Now"})
-artist_one.albums.create!({name:"Definitely Maybe"})
+venue1 = Venue.create!(name: 'Hard rock cafe', location: 'Edinburgh')
+venue2 = Venue.create!(name: 'O2 Arena', location: 'London')
 
-venue_one = Venue.create!( { name: 'Corn Exchange', location:'Edinburgh' } )
-venue_two = Venue.create!( { name: "O2", location:'London'} )
+track1 = Track.create!(album_id: album_two.id, title: "Live Forever", duration: 180)
+track2 = Track.create!(album_id: album_two.id, title: "Cigarettes and Alcohol", duration: 180)
 
-Gig.create!( {
-  artist_id: artist_one.id, 
-  venue_id: venue_one.id,
+Gig.create({
+  artist_id: artist1.id,
+  venue_id: venue1.id,
   price: 30,
-  date: DateTime.new(2016, 11, 1)
-})
+  # if no hour is set, it'll default to midnight
+  # to add hour would be (DateTime.new(2016, 11, 1, 15, 0, 0)) - it works
+  # YYYY/MM/DD/HH/MM/SS
+  date: DateTime.new(2016, 11, 1, 15, 0, 0)
+  })
