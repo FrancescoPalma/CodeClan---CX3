@@ -18,4 +18,5 @@ Week10 : Java fundamentals, OOP, TDD with JUnit, Eclipse IDE, Design Patterns, U
 Week11 : Android fundamentals, Unit Tests, Controls, Activity, ListViews, ListItems, adapting JSON data  
 Week12 : Solo Project 3 with Java/Android  
 Week13 : React, ES6, Introduction to Flux/Redux  
-Week14 : RubyOnRails, ORM
+Week14 : RubyOnRails, ORM  
+Week15 : Solo Project 4 with Swift/iOS
