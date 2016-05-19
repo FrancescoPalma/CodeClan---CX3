@@ -17,4 +17,5 @@ Week9 : Team Project 2 with Full-Stack JavaScript
 Week10 : Java fundamentals, OOP, TDD with JUnit, Eclipse IDE, Design Patterns, UML  
 Week11 : Android fundamentals, Unit Tests, Controls, Activity, ListViews, ListItems, adapting JSON data  
 Week12 : Solo Project 3 with Java/Android  
-Week13 : React, ES6 
+Week13 : React, ES6, Introduction to Flux/Redux  
+Week14 : RubyOnRails, ORM
