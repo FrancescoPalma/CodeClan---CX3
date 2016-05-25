@@ -4,7 +4,6 @@ Main Repo for CodeClan CX3 work
 This is the main Repository where all the exercises and work during classes will be stored.  
 Every week has a folder with subfolders inside storing exercises, apps, tests, etc. that have been done each day.
 
-(In Progress)  
 Week1 : Fundamentals of programming, Unix, Ruby, TestDrivenDevelopment  
 Week2 : OOP in Ruby, Inheritance, Composition, Blocks, Modules  
 Week3 : Relational Databases, SQL, PostGreSQL, web programming, MVC, Sinatra, CRUD, REST  
@@ -19,4 +18,5 @@ Week11 : Android fundamentals, Unit Tests, Controls, Activity, ListViews, ListIt
 Week12 : Solo Project 3 with Java/Android  
 Week13 : React, ES6, Introduction to Flux/Redux  
 Week14 : RubyOnRails, ORM  
-Week15 : Solo Project 4 with Swift/iOS
+Week15 : Solo Project 4 with Swift/iOS  
+Week16 : Swift, iOS, Data Structures, Algorithm Complexity, Parallel Programming, Computer Architecture
